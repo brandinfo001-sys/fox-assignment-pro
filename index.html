@@ -27,7 +27,7 @@
 
             position: relative;
 
-            min-height: 680px;
+            min-height: 700px;
 
             display: flex;
 
@@ -39,22 +39,16 @@
 
             color: #ffffff;
 
-            /*
-             IMPORTANT:
-             Replace home-hero.png with the exact filename
-             of your new image if you use another name.
-            */
-
             background-image:
 
                 linear-gradient(
                     90deg,
-                    rgba(3, 20, 43, 0.88) 0%,
-                    rgba(3, 20, 43, 0.76) 45%,
-                    rgba(3, 20, 43, 0.48) 100%
+                    rgba(3, 20, 43, 0.91) 0%,
+                    rgba(3, 20, 43, 0.78) 42%,
+                    rgba(3, 20, 43, 0.38) 100%
                 ),
 
-                url("home-hero.png");
+                url("home-hero.jpg");
 
             background-size: cover;
 
@@ -64,35 +58,6 @@
 
         }
 
-
-        /*
-           Additional subtle overlay
-           to keep the design premium.
-        */
-
-        .home-hero::after {
-
-            content: "";
-
-            position: absolute;
-
-            inset: 0;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    rgba(7, 26, 53, 0.12),
-                    rgba(245, 130, 32, 0.05)
-                );
-
-            pointer-events: none;
-
-        }
-
-
-        /* =====================================================
-           HERO CONTAINER
-        ===================================================== */
 
         .home-hero-container {
 
@@ -109,28 +74,9 @@
         }
 
 
-        .home-hero-grid {
-
-            display: grid;
-
-            grid-template-columns:
-                minmax(0, 1fr)
-                minmax(330px, 420px);
-
-            gap: 65px;
-
-            align-items: center;
-
-        }
-
-
-        /* =====================================================
-           LEFT CONTENT
-        ===================================================== */
-
         .home-hero-content {
 
-            max-width: 700px;
+            max-width: 720px;
 
         }
 
@@ -161,16 +107,16 @@
             color: #ffffff;
 
             font-size:
-                clamp(45px, 6vw, 72px);
+                clamp(44px, 6vw, 72px);
 
-            line-height: 1.04;
+            line-height: 1.05;
 
             font-weight: 800;
 
             letter-spacing: -2px;
 
             text-shadow:
-                0 3px 15px rgba(0,0,0,0.25);
+                0 3px 15px rgba(0,0,0,0.35);
 
         }
 
@@ -181,14 +127,10 @@
 
             color: #f58220;
 
-            margin-top: 6px;
+            margin-top: 7px;
 
         }
 
-
-        /* =====================================================
-           DESCRIPTION
-        ===================================================== */
 
         .home-hero-description {
 
@@ -197,20 +139,20 @@
             margin:
                 25px 0 0;
 
-            color: #edf3f9;
+            color: #f1f5f9;
 
             font-size: 17px;
 
             line-height: 1.8;
 
             text-shadow:
-                0 2px 8px rgba(0,0,0,0.2);
+                0 2px 8px rgba(0,0,0,0.3);
 
         }
 
 
         /* =====================================================
-           BUTTONS
+           HERO BUTTONS
         ===================================================== */
 
         .home-hero-buttons {
@@ -258,7 +200,7 @@
 
             box-shadow:
                 0 8px 25px
-                rgba(0,0,0,0.18);
+                rgba(0,0,0,0.22);
 
         }
 
@@ -284,13 +226,13 @@
             justify-content: center;
 
             background:
-                rgba(255,255,255,0.08);
+                rgba(255,255,255,0.10);
 
             color: #ffffff;
 
             border:
                 1px solid
-                rgba(255,255,255,0.65);
+                rgba(255,255,255,0.75);
 
             padding:
                 15px 23px;
@@ -322,10 +264,6 @@
         }
 
 
-        /* =====================================================
-           WHATSAPP ICON
-        ===================================================== */
-
         .home-whatsapp-icon {
 
             width: 20px;
@@ -338,7 +276,7 @@
 
 
         /* =====================================================
-           TRUST POINTS
+           HERO TRUST POINTS
         ===================================================== */
 
         .home-trust-points {
@@ -349,7 +287,7 @@
 
             flex-wrap: wrap;
 
-            margin-top: 32px;
+            margin-top: 35px;
 
         }
 
@@ -371,11 +309,11 @@
 
             left: 0;
 
-            top: 4px;
+            top: 5px;
 
-            width: 5px;
+            width: 6px;
 
-            height: 5px;
+            height: 6px;
 
             background: #f58220;
 
@@ -403,7 +341,7 @@
 
             display: block;
 
-            color: #cbd5e1;
+            color: #d2dae4;
 
             font-size: 10px;
 
@@ -411,218 +349,155 @@
 
 
         /* =====================================================
-           RIGHT SUPPORT CARD
+           ACADEMIC SUPPORT INTRO
         ===================================================== */
 
-        .home-hero-card-wrap {
-
-            position: relative;
-
-            min-width: 0;
-
-        }
-
-
-        .home-support-card {
-
-            position: relative;
-
-            width: 100%;
-
-            box-sizing: border-box;
+        .academic-support-section {
 
             background: #ffffff;
 
-            color: #071a35;
+        }
 
-            border-radius: 20px;
 
-            padding: 30px;
+        .academic-support-layout {
 
-            box-shadow:
-                0 25px 60px
-                rgba(0,0,0,0.28);
+            display: grid;
 
-            border:
-                1px solid
-                rgba(255,255,255,0.7);
+            grid-template-columns:
+                1fr 1fr;
 
-            overflow: hidden;
+            gap: 70px;
+
+            align-items: center;
 
         }
 
 
-        /*
-           Orange decorative circle
-        */
+        .academic-support-image {
 
-        .home-support-card::before {
+            width: 100%;
 
-            content: "";
+            height: 470px;
 
-            position: absolute;
+            object-fit: cover;
 
-            width: 170px;
-
-            height: 170px;
-
-            border-radius: 50%;
-
-            background: #fff1e5;
-
-            top: -85px;
-
-            right: -55px;
-
-        }
-
-
-        /* =====================================================
-           REAL LOGO
-        ===================================================== */
-
-        .support-card-logo {
-
-            position: relative;
-
-            z-index: 2;
-
-            width: 72px;
-
-            height: 72px;
-
-            object-fit: contain;
+            border-radius: 22px;
 
             display: block;
 
-            margin-bottom: 20px;
+            box-shadow:
+                0 20px 50px
+                rgba(7, 26, 53, 0.12);
 
         }
 
 
-        .home-support-card h2 {
+        .academic-support-content {
 
-            position: relative;
+            max-width: 590px;
 
-            z-index: 2;
+        }
+
+
+        .academic-support-label {
+
+            display: inline-block;
+
+            color: #f58220;
+
+            font-size: 13px;
+
+            font-weight: 900;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.8px;
+
+            margin-bottom: 14px;
+
+        }
+
+
+        .academic-support-content h2 {
 
             margin:
-                0 0 12px;
+                0 0 18px;
 
             color: #0a2b55;
 
-            font-size: 25px;
+            font-size:
+                clamp(34px, 4vw, 48px);
 
-            line-height: 1.2;
+            line-height: 1.12;
 
             font-weight: 800;
 
         }
 
 
-        .home-support-card p {
+        .academic-support-content > p {
 
-            position: relative;
-
-            z-index: 2;
-
-            margin: 0;
+            margin:
+                0 0 25px;
 
             color: #64748b;
 
-            font-size: 14px;
+            font-size: 16px;
 
-            line-height: 1.7;
-
-        }
-
-
-        /* =====================================================
-           CARD CTA
-        ===================================================== */
-
-        .home-support-link {
-
-            position: relative;
-
-            z-index: 2;
-
-            display: inline-block;
-
-            margin-top: 20px;
-
-            color: #f58220;
-
-            font-size: 14px;
-
-            font-weight: 900;
-
-            text-decoration: none;
+            line-height: 1.8;
 
         }
 
 
-        .home-support-link:hover {
+        .academic-support-points {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 18px;
+
+            margin-top: 25px;
+
+        }
+
+
+        .academic-support-point {
+
+            padding:
+                18px;
+
+            background: #f8fafc;
+
+            border:
+                1px solid #e5e7eb;
+
+            border-radius: 12px;
+
+        }
+
+
+        .academic-support-point strong {
+
+            display: block;
 
             color: #0a2b55;
 
-        }
+            font-size: 14px;
 
-
-        /* =====================================================
-           CARD DIVIDER
-        ===================================================== */
-
-        .support-card-divider {
-
-            height: 1px;
-
-            background: #e2e8f0;
-
-            margin:
-                20px 0 12px;
+            margin-bottom: 6px;
 
         }
 
 
-        /* =====================================================
-           SUPPORT LIST
-        ===================================================== */
+        .academic-support-point span {
 
-        .support-list {
-
-            list-style: none;
-
-            padding: 0;
-
-            margin: 0;
-
-        }
-
-
-        .support-list li {
-
-            color: #475569;
+            color: #64748b;
 
             font-size: 12px;
 
-            line-height: 1.6;
-
-            padding:
-                5px 0;
-
-        }
-
-
-        .support-list li::before {
-
-            content: "✓";
-
-            color: #f58220;
-
-            font-weight: 900;
-
-            margin-right: 8px;
+            line-height: 1.5;
 
         }
 
@@ -630,6 +505,13 @@
         /* =====================================================
            SERVICES SECTION
         ===================================================== */
+
+        .home-services-section {
+
+            background: #f7f9fc;
+
+        }
+
 
         .home-services-intro {
 
@@ -643,6 +525,25 @@
         }
 
 
+        .home-services-label {
+
+            display: inline-block;
+
+            color: #f58220;
+
+            font-size: 13px;
+
+            font-weight: 900;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.8px;
+
+            margin-bottom: 12px;
+
+        }
+
+
         .home-services-intro h2 {
 
             margin:
@@ -651,7 +552,9 @@
             color: #0a2b55;
 
             font-size:
-                clamp(32px, 4vw, 44px);
+                clamp(32px, 4vw, 46px);
+
+            line-height: 1.15;
 
             font-weight: 800;
 
@@ -664,16 +567,12 @@
 
             color: #64748b;
 
-            font-size: 17px;
+            font-size: 16px;
 
             line-height: 1.7;
 
         }
 
-
-        /* =====================================================
-           SERVICE CARDS
-        ===================================================== */
 
         .home-service-grid {
 
@@ -694,13 +593,13 @@
             border:
                 1px solid #e5e7eb;
 
-            border-radius: 16px;
+            border-radius: 17px;
 
             padding: 30px;
 
             box-shadow:
                 0 8px 25px
-                rgba(7, 26, 53, 0.06);
+                rgba(7, 26, 53, 0.05);
 
             transition:
                 all 0.3s ease;
@@ -711,7 +610,7 @@
         .home-service-card:hover {
 
             transform:
-                translateY(-6px);
+                translateY(-7px);
 
             box-shadow:
                 0 18px 40px
@@ -734,7 +633,7 @@
 
             justify-content: center;
 
-            background: #fff3e8;
+            background: #fff1e5;
 
             font-size: 28px;
 
@@ -747,7 +646,9 @@
 
             color: #0a2b55;
 
-            font-size: 21px;
+            font-size: 20px;
+
+            line-height: 1.3;
 
             margin:
                 0 0 10px;
@@ -764,7 +665,7 @@
             line-height: 1.7;
 
             margin:
-                0 0 15px;
+                0 0 17px;
 
         }
 
@@ -778,6 +679,13 @@
             font-weight: 800;
 
             text-decoration: none;
+
+        }
+
+
+        .home-service-card a:hover {
+
+            color: #0a2b55;
 
         }
 
@@ -798,7 +706,7 @@
             border-radius: 22px;
 
             padding:
-                55px 35px;
+                60px 35px;
 
             color: #ffffff;
 
@@ -812,10 +720,12 @@
             margin:
                 0 0 12px;
 
-            font-size:
-                clamp(30px, 4vw, 42px);
-
             color: #ffffff;
+
+            font-size:
+                clamp(30px, 4vw, 43px);
+
+            line-height: 1.2;
 
         }
 
@@ -825,11 +735,13 @@
             max-width: 650px;
 
             margin:
-                0 auto 27px;
+                0 auto 28px;
 
             color: #dbe5f0;
 
             line-height: 1.7;
+
+            font-size: 16px;
 
         }
 
@@ -857,6 +769,21 @@
 
             font-weight: 800;
 
+            transition:
+                all 0.3s ease;
+
+        }
+
+
+        .home-final-cta-button:hover {
+
+            background: #ffffff;
+
+            color: #071a35;
+
+            transform:
+                translateY(-2px);
+
         }
 
 
@@ -868,10 +795,7 @@
 
             .home-hero {
 
-                min-height: auto;
-
-                padding:
-                    75px 20px;
+                min-height: 650px;
 
                 background-position:
                     center center;
@@ -879,56 +803,25 @@
             }
 
 
-            .home-hero-grid {
+            .academic-support-layout {
 
                 grid-template-columns: 1fr;
 
-                gap: 55px;
+                gap: 45px;
 
             }
 
 
-            .home-hero-content {
+            .academic-support-content {
 
-                max-width: 760px;
-
-                text-align: center;
-
-                margin: 0 auto;
+                max-width: 800px;
 
             }
 
 
-            .home-hero-description {
+            .academic-support-image {
 
-                margin-left: auto;
-
-                margin-right: auto;
-
-            }
-
-
-            .home-hero-buttons {
-
-                justify-content: center;
-
-            }
-
-
-            .home-trust-points {
-
-                justify-content: center;
-
-            }
-
-
-            .home-hero-card-wrap {
-
-                max-width: 500px;
-
-                width: 100%;
-
-                margin: 0 auto;
+                height: 430px;
 
             }
 
@@ -951,11 +844,13 @@
 
             .home-hero {
 
+                min-height: auto;
+
                 padding:
-                    60px 18px;
+                    80px 18px;
 
                 background-position:
-                    60% center;
+                    62% center;
 
             }
 
@@ -1003,8 +898,6 @@
 
                 box-sizing: border-box;
 
-                text-align: center;
-
             }
 
 
@@ -1015,9 +908,7 @@
                 grid-template-columns:
                     repeat(3, 1fr);
 
-                gap: 10px;
-
-                text-align: left;
+                gap: 12px;
 
             }
 
@@ -1036,25 +927,32 @@
             }
 
 
-            .home-support-card {
+            .academic-support-layout {
 
-                padding: 25px;
-
-            }
-
-
-            .support-card-logo {
-
-                width: 65px;
-
-                height: 65px;
+                gap: 35px;
 
             }
 
 
-            .home-support-card h2 {
+            .academic-support-image {
 
-                font-size: 22px;
+                height: 350px;
+
+                border-radius: 16px;
+
+            }
+
+
+            .academic-support-content h2 {
+
+                font-size: 34px;
+
+            }
+
+
+            .academic-support-points {
+
+                grid-template-columns: 1fr;
 
             }
 
@@ -1069,7 +967,7 @@
             .home-final-cta {
 
                 padding:
-                    40px 25px;
+                    45px 25px;
 
             }
 
@@ -1125,21 +1023,24 @@
                 </a>
 
 
-                <a href="services.html">
+                <a
+                    href="services.html">
 
                     Services
 
                 </a>
 
 
-                <a href="about.html">
+                <a
+                    href="about.html">
 
                     About
 
                 </a>
 
 
-                <a href="faq.html">
+                <a
+                    href="faq.html">
 
                     FAQs
 
@@ -1164,16 +1065,12 @@
 
 
 
-    <!-- =====================================================
-         MAIN
-    ===================================================== -->
-
     <main>
 
 
         <!-- =================================================
              HERO
-        ================================================== -->
+        ================================================= -->
 
         <section class="home-hero">
 
@@ -1181,137 +1078,133 @@
             <div class="home-hero-container">
 
 
-                <div class="home-hero-grid">
+                <div class="home-hero-content">
 
 
-                    <!-- =====================================
-                         LEFT CONTENT
-                    ====================================== -->
+                    <span class="home-eyebrow">
 
-                    <div class="home-hero-content">
+                        UK ACADEMIC SUPPORT
+
+                    </span>
 
 
-                        <span class="home-eyebrow">
+                    <h1>
 
-                            UK ACADEMIC SUPPORT
+                        Clearer academic work.
+
+                        <span class="orange-text">
+
+                            Stronger confidence.
 
                         </span>
 
+                    </h1>
 
-                        <h1>
 
-                            Clearer academic work.
+                    <p class="home-hero-description">
 
-                            <span class="orange-text">
+                        Practical academic support for university
+                        and professional-study students — from
+                        assignment planning and research guidance
+                        to proofreading, referencing and
+                        dissertation support.
 
-                                Stronger confidence.
+                    </p>
+
+
+                    <div class="home-hero-buttons">
+
+
+                        <!-- WHATSAPP -->
+
+                        <a
+                            class="home-whatsapp-button"
+                            href="https://wa.me/447916691104?text=Hello%20Fox%20Assignment%20Pro%2C%20I%20would%20like%20to%20discuss%20academic%20support."
+                            target="_blank"
+                            rel="noopener">
+
+
+                            <svg
+                                class="home-whatsapp-icon"
+                                viewBox="0 0 32 32"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true">
+
+                                <path
+                                    fill="currentColor"
+                                    d="M16 3C8.82 3 3 8.82 3 16c0 2.3.6 4.55 1.74 6.54L3 29l6.64-1.7A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3zm0 23.7c-2.05 0-4.06-.55-5.81-1.6l-.42-.25-3.94 1.01 1.05-3.83-.27-.44A10.95 10.95 0 1 1 16 26.7zm6-8.22c-.33-.17-1.96-.97-2.26-1.08-.3-.11-.52-.17-.74.17-.22.33-.85 1.08-1.04 1.3-.19.22-.38.25-.71.08-.33-.17-1.4-.52-2.67-1.65-.99-.88-1.66-1.96-1.85-2.29-.19-.33-.02-.51.14-.68.15-.15.33-.38.49-.57.16-.19.22-.33.33-.55.11-.22.06-.41-.03-.58-.08-.17-.74-1.78-1.01-2.44-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.58.08-.88.41-.3.33-1.16 1.13-1.16 2.76s1.19 3.2 1.35 3.42c.17.22 2.34 3.58 5.67 5.02.79.34 1.41.54 1.89.69.79.25 1.5.21 2.07.13.63-.09 1.96-.8 2.24-1.57.27-.77.27-1.43.19-1.57-.08-.14-.3-.22-.63-.39z"/>
+
+                            </svg>
+
+
+                            Chat on WhatsApp
+
+
+                        </a>
+
+
+                        <a
+                            class="home-explore-button"
+                            href="services.html">
+
+                            Explore Services
+
+                        </a>
+
+
+                    </div>
+
+
+                    <div class="home-trust-points">
+
+
+                        <div class="home-trust-item">
+
+                            <span class="home-trust-title">
+
+                                UK-focused
 
                             </span>
 
-                        </h1>
+                            <span class="home-trust-description">
 
+                                Academic standards
 
-                        <p class="home-hero-description">
-
-                            Practical academic support for university
-                            and professional-study students — from
-                            assignment planning and research guidance
-                            to proofreading, referencing and
-                            dissertation support.
-
-                        </p>
-
-
-                        <!-- BUTTONS -->
-
-                        <div class="home-hero-buttons">
-
-
-                            <!-- WHATSAPP -->
-
-                            <a
-                                class="home-whatsapp-button"
-                                href="https://wa.me/447916691104?text=Hello%20Fox%20Assignment%20Pro%2C%20I%20would%20like%20to%20discuss%20academic%20support."
-                                target="_blank"
-                                rel="noopener">
-
-
-                                <svg
-                                    class="home-whatsapp-icon"
-                                    viewBox="0 0 32 32"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    aria-hidden="true">
-
-                                    <path
-                                        fill="currentColor"
-                                        d="M16 3C8.82 3 3 8.82 3 16c0 2.3.6 4.55 1.74 6.54L3 29l6.64-1.7A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3zm0 23.7c-2.05 0-4.06-.55-5.81-1.6l-.42-.25-3.94 1.01 1.05-3.83-.27-.44A10.95 10.95 0 1 1 16 26.7zm6-8.22c-.33-.17-1.96-.97-2.26-1.08-.3-.11-.52-.17-.74.17-.22.33-.85 1.08-1.04 1.3-.19.22-.38.25-.71.08-.33-.17-1.4-.52-2.67-1.65-.99-.88-1.66-1.96-1.85-2.29-.19-.33-.02-.51.14-.68.15-.15.33-.38.49-.57.16-.19.22-.33.33-.55.11-.22.06-.41-.03-.58-.08-.17-.74-1.78-1.01-2.44-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.58.08-.88.41-.3.33-1.16 1.13-1.16 2.76s1.19 3.2 1.35 3.42c.17.22 2.34 3.58 5.67 5.02.79.34 1.41.54 1.89.69.79.25 1.5.21 2.07.13.63-.09 1.96-.8 2.24-1.57.27-.77.27-1.43.19-1.57-.08-.14-.3-.22-.63-.39z"/>
-
-                                </svg>
-
-
-                                Chat on WhatsApp
-
-
-                            </a>
-
-
-                            <!-- EXPLORE -->
-
-                            <a
-                                class="home-explore-button"
-                                href="services.html">
-
-                                Explore Services
-
-                            </a>
-
+                            </span>
 
                         </div>
 
 
-                        <!-- TRUST -->
+                        <div class="home-trust-item">
 
-                        <div class="home-trust-points">
+                            <span class="home-trust-title">
 
+                                Student-first
 
-                            <div class="home-trust-item">
+                            </span>
 
-                                <span class="home-trust-title">
-                                    UK-focused
-                                </span>
+                            <span class="home-trust-description">
 
-                                <span class="home-trust-description">
-                                    Academic standards
-                                </span>
+                                Clear communication
 
-                            </div>
+                            </span>
 
-
-                            <div class="home-trust-item">
-
-                                <span class="home-trust-title">
-                                    Student-first
-                                </span>
-
-                                <span class="home-trust-description">
-                                    Clear communication
-                                </span>
-
-                            </div>
+                        </div>
 
 
-                            <div class="home-trust-item">
+                        <div class="home-trust-item">
 
-                                <span class="home-trust-title">
-                                    Flexible
-                                </span>
+                            <span class="home-trust-title">
 
-                                <span class="home-trust-description">
-                                    Online support
-                                </span>
+                                Flexible
 
-                            </div>
+                            </span>
 
+                            <span class="home-trust-description">
+
+                                Online support
+
+                            </span>
 
                         </div>
 
@@ -1319,80 +1212,156 @@
                     </div>
 
 
-
-                    <!-- =====================================
-                         RIGHT SUPPORT CARD
-                    ====================================== -->
-
-                    <div class="home-hero-card-wrap">
+                </div>
 
 
-                        <div class="home-support-card">
+            </div>
 
 
-                            <!-- REAL LOGO -->
-
-                            <img
-                                class="support-card-logo"
-                                src="logo.png"
-                                alt="Fox Assignment Pro logo">
+        </section>
 
 
-                            <h2>
 
-                                Need help with your
-                                next academic task?
+        <!-- =================================================
+             ACADEMIC SUPPORT SECTION
+        ================================================= -->
 
-                            </h2>
-
-
-                            <p>
-
-                                Send your brief, question or
-                                requirements and start a
-                                conversation with our support team.
-
-                            </p>
+        <section
+            class="section academic-support-section">
 
 
-                            <a
-                                class="home-support-link"
-                                href="contact.html">
-
-                                Start your enquiry →
-
-                            </a>
+            <div class="container">
 
 
-                            <div
-                                class="support-card-divider">
+                <div class="academic-support-layout">
+
+
+                    <!-- IMAGE -->
+
+                    <div>
+
+                        <img
+                            class="academic-support-image"
+                            src="academic-support.jpg"
+                            alt="Students working with laptops">
+
+                    </div>
+
+
+                    <!-- TEXT -->
+
+                    <div class="academic-support-content">
+
+
+                        <span class="academic-support-label">
+
+                            ACADEMIC SUPPORT
+
+                        </span>
+
+
+                        <h2>
+
+                            Academic Support That Fits Your Needs
+
+                        </h2>
+
+
+                        <p>
+
+                            Every academic project is different.
+                            Our support is designed around your
+                            requirements, subject area, academic
+                            level and university expectations.
+
+                        </p>
+
+
+                        <p>
+
+                            Whether you need help understanding an
+                            assessment brief, organising your research,
+                            improving your academic writing or
+                            preparing a dissertation, we can help
+                            you approach your work with greater
+                            clarity and confidence.
+
+                        </p>
+
+
+                        <div class="academic-support-points">
+
+
+                            <div class="academic-support-point">
+
+                                <strong>
+
+                                    Clear Guidance
+
+                                </strong>
+
+                                <span>
+
+                                    Practical support explained
+                                    in a straightforward way.
+
+                                </span>
+
                             </div>
 
 
-                            <ul class="support-list">
+                            <div class="academic-support-point">
+
+                                <strong>
+
+                                    Research Support
+
+                                </strong>
+
+                                <span>
+
+                                    Help with research planning,
+                                    sources and structure.
+
+                                </span>
+
+                            </div>
 
 
-                                <li>
-                                    Research & structure
-                                </li>
+                            <div class="academic-support-point">
+
+                                <strong>
+
+                                    Academic Presentation
+
+                                </strong>
+
+                                <span>
+
+                                    Improve clarity, structure,
+                                    referencing and formatting.
+
+                                </span>
+
+                            </div>
 
 
-                                <li>
-                                    Referencing & formatting
-                                </li>
+                            <div class="academic-support-point">
 
+                                <strong>
 
-                                <li>
-                                    Editing & proofreading
-                                </li>
+                                    Flexible Online Support
 
+                                </strong>
 
-                                <li>
-                                    Dissertation guidance
-                                </li>
+                                <span>
 
+                                    Discuss your requirements
+                                    online at a convenient time.
 
-                            </ul>
+                                </span>
+
+                            </div>
 
 
                         </div>
@@ -1413,9 +1382,10 @@
 
         <!-- =================================================
              SERVICES
-        ================================================== -->
+        ================================================= -->
 
-        <section class="section section-light">
+        <section
+            class="section home-services-section">
 
 
             <div class="container">
@@ -1424,18 +1394,25 @@
                 <div class="home-services-intro">
 
 
+                    <span class="home-services-label">
+
+                        WHAT WE SUPPORT
+
+                    </span>
+
+
                     <h2>
 
-                        Academic Support That Fits Your Needs
+                        Academic Services Designed Around You
 
                     </h2>
 
 
                     <p>
 
-                        Practical support across assignments,
-                        coursework, dissertations, research and
-                        academic presentation.
+                        From your first idea to final presentation,
+                        explore the different types of academic
+                        support available through Fox Assignment Pro.
 
                     </p>
 
@@ -1446,6 +1423,8 @@
 
                 <div class="home-service-grid">
 
+
+                    <!-- SERVICE 1 -->
 
                     <article class="home-service-card">
 
@@ -1484,6 +1463,47 @@
 
 
 
+                    <!-- SERVICE 2 -->
+
+                    <article class="home-service-card">
+
+
+                        <div class="home-service-icon">
+
+                            📚
+
+                        </div>
+
+
+                        <h3>
+
+                            Essay & Coursework
+
+                        </h3>
+
+
+                        <p>
+
+                            Support with developing ideas,
+                            organising arguments and improving
+                            academic structure.
+
+                        </p>
+
+
+                        <a href="services.html">
+
+                            Learn More →
+
+                        </a>
+
+
+                    </article>
+
+
+
+                    <!-- SERVICE 3 -->
+
                     <article class="home-service-card">
 
 
@@ -1503,7 +1523,7 @@
 
                         <p>
 
-                            Support with research questions,
+                            Guidance with research questions,
                             literature reviews, methodology and
                             dissertation structure.
 
@@ -1520,6 +1540,8 @@
                     </article>
 
 
+
+                    <!-- SERVICE 4 -->
 
                     <article class="home-service-card">
 
@@ -1557,6 +1579,84 @@
                     </article>
 
 
+
+                    <!-- SERVICE 5 -->
+
+                    <article class="home-service-card">
+
+
+                        <div class="home-service-icon">
+
+                            🔬
+
+                        </div>
+
+
+                        <h3>
+
+                            Research Guidance
+
+                        </h3>
+
+
+                        <p>
+
+                            Support with research questions,
+                            literature searches, methodology
+                            and academic planning.
+
+                        </p>
+
+
+                        <a href="services.html">
+
+                            Learn More →
+
+                        </a>
+
+
+                    </article>
+
+
+
+                    <!-- SERVICE 6 -->
+
+                    <article class="home-service-card">
+
+
+                        <div class="home-service-icon">
+
+                            📊
+
+                        </div>
+
+
+                        <h3>
+
+                            Reports & Case Studies
+
+                        </h3>
+
+
+                        <p>
+
+                            Help with structuring reports,
+                            analysing case studies and presenting
+                            academic or professional information.
+
+                        </p>
+
+
+                        <a href="services.html">
+
+                            Learn More →
+
+                        </a>
+
+
+                    </article>
+
+
                 </div>
 
 
@@ -1569,7 +1669,7 @@
 
         <!-- =================================================
              FINAL CTA
-        ================================================== -->
+        ================================================= -->
 
         <section class="section">
 
@@ -1611,7 +1711,7 @@
 
                             <path
                                 fill="currentColor"
-                                d="M16 3C8.82 3 3 8.82 3 16c0 2.3.6 4.55 1.74 6.54L3 29l6.64-1.7A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3zm0 23.7c-2.05 0-4.06-.55-5.81-1.6l-.42-.25-3.94 1.01 1.05-3.83-.27-.44A10.95 10.95 0 1 1 16 26.7zm6-8.22c-.33-.17-1.96-.97-2.26-1.08-.3-.11-.52-.17-.74.17-.22.33-.85 1.08-1.04 1.3-.19.22-.38.25-.71.08-.33-.17-1.4-.52-2.67-1.65-.99-.88-1.66-1.96-1.85-2.29-.19-.33-.02-.51.14-.68.15-.15.33-.38.49-.57.16-.19.22-.33.33-.55.11-.22.06-.41-.03-.58-.08-.17-.74-1.78-1.01-2.44-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.58.08-.88.41-.3.33-1.16 1.13-1.16 2.76s1.19 3.2 1.35 3.42c.17.22 2.34 3.58 5.67 5.02.79.34 1.41.54 1.89.69.79.25 1.5.21 2.07.13.63-.09 1.96-.8 2.24-1.57.27-.77.27-1.43.19-1.57-.08-.14-.3-.22-.63-.39z"/>
+                                d="M16 3C8.82 3 3 8.82 3 16c0 2.3.6 4.55 1.74 6.54L3 29l6.64-1.7A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3zm0 23.7c-2.05 0-4.06-.55-5.81-1.6l-.42-.25-3.94 1.01 1.05-3.83-.27-.44A10.95 10.95 0 1 1 16 26.7zm6-8.22c-.33-.17-1.96-.97-2.26-1.08-.3-.11-.52-.17-.74.17-.22.33-.85 1.08-1.04 1.3-.19.22-.38.25-.71.08-.33-.17-1.4-.52-2.67-1.65-.99-.88-1.66-1.96-1.85-2.29-.19-.33-.02-.51.14-.68.15-.15.33-.38.49-.57.16-.19.22-.33.33-.55.11-.22.06-.41-.03-.58-.08-.17-.74-1.78-1.01-2.44-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.58.08-.88.41-.3.33-1.16 1.13-1.16 2.76s1.19 3.2 1.35 3.42c.17.22 2.34 3.58 5.67 5.02.79.34 1.41.54 1.89.69.63-.09 1.96-.8 2.24-1.57.27-.77.27-1.43.19-1.57-.08-.14-.3-.22-.63-.39z"/>
 
                         </svg>
 
