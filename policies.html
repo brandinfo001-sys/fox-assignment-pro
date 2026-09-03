@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Policies | Fox Assignment Pro</title>
+
+    <meta name="description" content="Privacy Policy, Terms & Conditions, Academic Support Disclaimer and Cookie Policy for Fox Assignment Pro.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* ================================
+           POLICIES PAGE
+        ================================= */
+
+        .policies-hero {
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(3, 20, 43, 0.96),
+                    rgba(7, 26, 53, 0.90)
+                );
+            color: #ffffff;
+            padding: 90px 20px;
+            text-align: center;
+        }
+
+        .policies-hero .eyebrow {
+            display: inline-block;
+            color: #f58220;
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .policies-hero h1 {
+            font-size: clamp(42px, 7vw, 68px);
+            line-height: 1.05;
+            margin: 0 auto 20px;
+            color: #ffffff;
+        }
+
+        .policies-hero p {
+            max-width: 760px;
+            margin: 0 auto;
+            color: #e5edf7;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        /* Policy navigation */
+
+        .policy-nav-wrap {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .policy-nav {
+            max-width: 1150px;
+            margin: auto;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .policy-nav a {
+            text-decoration: none;
+            color: #071a35;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 9px 14px;
+            border-radius: 7px;
+            transition: 0.2s ease;
+        }
+
+        .policy-nav a:hover {
+            background: #fff1e5;
+            color: #f58220;
+        }
+
+        /* Main content */
+
+        .policies-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 70px 20px;
+        }
+
+        .policy-section {
+            background: #ffffff;
+            margin-bottom: 55px;
+            scroll-margin-top: 100px;
+        }
+
+        .policy-section + .policy-section {
+            border-top: 1px solid #e5e7eb;
+            padding-top: 55px;
+        }
+
+        .policy-label {
+            color: #f58220;
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+        }
+
+        .policy-section h2 {
+            color: #071a35;
+            font-size: clamp(32px, 5vw, 48px);
+            line-height: 1.1;
+            margin: 0 0 25px;
+        }
+
+        .policy-section h3 {
+            color: #071a35;
+            font-size: 22px;
+            margin: 30px 0 12px;
+        }
+
+        .policy-section p {
+            color: #475569;
+            font-size: 16px;
+            line-height: 1.8;
+            margin: 0 0 16px;
+        }
+
+        .policy-section ul {
+            color: #475569;
+            line-height: 1.8;
+            padding-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        .policy-section li {
+            margin-bottom: 9px;
+        }
+
+        .policy-section strong {
+            color: #071a35;
+        }
+
+        /* Contact box */
+
+        .policy-contact {
+            background: #fff3e8;
+            border-left: 5px solid #f58220;
+            padding: 28px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .policy-contact h3 {
+            margin-top: 0;
+        }
+
+        .contact-details {
+            margin: 15px 0;
+        }
+
+        .contact-details p {
+            margin-bottom: 8px;
+        }
+
+        /* WhatsApp button */
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #25D366;
+            color: #ffffff !important;
+            text-decoration: none;
+            font-weight: 800;
+            padding: 13px 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.92;
+        }
+
+        .whatsapp-icon {
+            width: 21px;
+            height: 21px;
+            display: block;
+        }
+
+        /* Notice box */
+
+        .policy-notice {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 22px 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+
+        .policy-notice p {
+            margin: 0;
+        }
+
+        /* Footer CTA */
+
+        .policy-cta {
+            background: #071a35;
+            color: #ffffff;
+            padding: 65px 20px;
+            text-align: center;
+        }
+
+        .policy-cta h2 {
+            color: #ffffff;
+            font-size: clamp(34px, 5vw, 50px);
+            margin: 0 0 15px;
+        }
+
+        .policy-cta p {
+            color: #dce6f2;
+            max-width: 650px;
+            margin: 0 auto 25px;
+            line-height: 1.7;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 700px) {
+
+            .policies-hero {
+                padding: 65px 18px;
+            }
+
+            .policies-hero h1 {
+                font-size: 42px;
+            }
+
+            .policies-hero p {
+                font-size: 16px;
+            }
+
+            .policy-nav-wrap {
+                position: static;
+            }
+
+            .policy-nav {
+                padding: 12px;
+                gap: 5px;
+            }
+
+            .policy-nav a {
+                font-size: 13px;
+                padding: 8px 10px;
+            }
+
+            .policies-container {
+                padding: 50px 18px;
+            }
+
+            .policy-section h2 {
+                font-size: 34px;
+            }
+
+            .policy-section h3 {
+                font-size: 20px;
+            }
+
+            .policy-section p,
+            .policy-section li {
+                font-size: 15px;
+            }
+
+            .policy-contact {
+                padding: 22px;
+            }
+
+            .whatsapp-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================================
+         HEADER
+    ================================= -->
+
+    <header class="site-header">
+
+        <div class="container nav-wrap">
+
+            <a href="index.html" class="brand">
+                <img src="logo.png" alt="Fox Assignment Pro">
+            </a>
+
+            <button class="menu-toggle" aria-label="Open menu">
+                ☰
+            </button>
+
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="faq.html">FAQs</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://wa.me/447916691104"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="nav-cta">
+                    WhatsApp Us
+                </a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================================
+         HERO
+    ================================= -->
+
+    <section class="policies-hero">
+
+        <span class="eyebrow">Fox Assignment Pro</span>
+
+        <h1>Policies &amp; Terms</h1>
+
+        <p>
+            Please read our Privacy Policy, Terms &amp; Conditions,
+            Academic Support Disclaimer and Cookie Policy before using
+            our website or services.
+        </p>
+
+    </section>
+
+
+    <!-- ================================
+         POLICY NAVIGATION
+    ================================= -->
+
+    <div class="policy-nav-wrap">
+
+        <nav class="policy-nav">
+
+            <a href="#privacy">Privacy Policy</a>
+
+            <a href="#terms">Terms &amp; Conditions</a>
+
+            <a href="#disclaimer">Disclaimer</a>
+
+            <a href="#cookies">Cookie Policy</a>
+
+        </nav>
+
+    </div>
+
+
+    <!-- ================================
+         MAIN CONTENT
+    ================================= -->
+
+    <main class="policies-container">
+
+
+        <!-- ================================
+             PRIVACY POLICY
+        ================================= -->
+
+        <section class="policy-section" id="privacy">
+
+            <div class="policy-label">01 — Privacy</div>
+
+            <h2>Privacy Policy</h2>
+
+            <p>
+                Fox Assignment Pro respects your privacy and is committed
+                to handling personal information responsibly. This Privacy
+                Policy explains what information we may collect, how we
+                use it and how you can contact us about your information.
+            </p>
+
+            <h3>Information We May Collect</h3>
+
+            <p>
+                When you contact us or request information about our
+                services, we may receive information such as:
+            </p>
+
+            <ul>
+                <li>Your name or preferred name.</li>
+                <li>Your email address.</li>
+                <li>Your WhatsApp or telephone number.</li>
+                <li>Information contained in your enquiries and messages.</li>
+                <li>Details about the academic support you are requesting.</li>
+                <li>Files or documents that you voluntarily provide to us.</li>
+            </ul>
+
+            <h3>How We Use Your Information</h3>
+
+            <p>
+                We may use information you provide to:
+            </p>
+
+            <ul>
+                <li>Respond to enquiries.</li>
+                <li>Discuss and provide requested services.</li>
+                <li>Communicate with you about your enquiry or order.</li>
+                <li>Provide customer support.</li>
+                <li>Maintain appropriate business and transaction records.</li>
+                <li>Protect our website, services and customers against misuse.</li>
+            </ul>
+
+            <h3>Information Sharing</h3>
+
+            <p>
+                We do not sell your personal information. We may disclose
+                information where reasonably necessary to provide our
+                services, operate our business, comply with legal
+                obligations, or protect our legitimate interests.
+            </p>
+
+            <h3>Third-Party Services</h3>
+
+            <p>
+                Our website may contain links to third-party services,
+                including WhatsApp and social media platforms. When you
+                follow these links, your interaction may be subject to the
+                privacy policies and terms of those third parties.
+            </p>
+
+            <h3>Data Retention</h3>
+
+            <p>
+                We retain personal information only for as long as
+                reasonably necessary for the purposes for which it was
+                collected, including business, legal, accounting or
+                record-keeping requirements where applicable.
+            </p>
+
+            <h3>Your Rights</h3>
+
+            <p>
+                Depending on your circumstances and applicable UK data
+                protection law, you may have rights relating to your
+                personal information, including rights to request access,
+                correction or deletion of personal information.
+            </p>
+
+            <p>
+                If you have a privacy-related request, please contact us
+                using the details at the end of this page.
+            </p>
+
+        </section>
+
+
+        <!-- ================================
+             TERMS & CONDITIONS
+        ================================= -->
+
+        <section class="policy-section" id="terms">
+
+            <div class="policy-label">02 — Terms</div>
+
+            <h2>Terms &amp; Conditions</h2>
+
+            <p>
+                Please read these Terms &amp; Conditions ("Terms") carefully
+                before using the website or services of Fox Assignment Pro
+                ("we", "us", "our"). By placing an order or using our
+                website, you agree to be bound by these Terms.
+            </p>
+
+
+            <h3>1. About Our Services</h3>
+
+            <p>
+                Fox Assignment Pro provides academic writing assistance,
+                including but not limited to assignments, essays,
+                coursework, case studies, and related support services,
+                based on instructions and requirements provided by the
+                customer.
+            </p>
+
+
+            <h3>2. Nature of Our Work — Reference Use Only</h3>
+
+            <p>
+                All content, drafts, and materials provided by Fox
+                Assignment Pro are intended <strong>for reference, research,
+                and learning purposes only</strong>. They are not intended
+                to be submitted as a customer's own final work.
+            </p>
+
+            <p>
+                Customers are responsible for reviewing, editing, and
+                adapting any material to meet their institution's academic
+                integrity policies, citation requirements, and submission
+                guidelines before any use.
+            </p>
+
+
+            <h3>3. Placing an Order</h3>
+
+            <p>
+                When you place an order, you agree to provide accurate,
+                complete, and timely instructions, including deadlines,
+                subject requirements, and any relevant source materials.
+                We are not responsible for delays or issues arising from
+                incomplete or incorrect information provided by the customer.
+            </p>
+
+
+            <h3>4. Pricing and Payment</h3>
+
+            <ul>
+                <li>
+                    Prices are quoted based on the scope, complexity,
+                    academic level, and deadline of each order.
+                </li>
+
+                <li>
+                    Full or partial payment, as agreed at the time of
+                    order, is required before work begins or is delivered.
+                </li>
+
+                <li>
+                    All payments must be made through the payment methods
+                    we offer.
+                </li>
+
+                <li>
+                    We do not store full payment card details.
+                </li>
+            </ul>
+
+
+            <h3>5. Revisions</h3>
+
+            <p>
+                We offer free revisions where the delivered work does not
+                match the original instructions provided at the time of
+                order. Revision requests should be submitted within a
+                reasonable timeframe, as specified at checkout or in your
+                order confirmation, and must not introduce new requirements
+                beyond the original brief.
+            </p>
+
+
+            <h3>6. Refund Policy</h3>
+
+            <p>
+                Refunds may be considered in circumstances such as
+                non-delivery, failure to meet the agreed core requirements,
+                or duplicate payments, subject to review on a
+                case-by-case basis.
+            </p>
+
+            <p>
+                Refund requests should be submitted in writing to our
+                contact email. We reserve the right to decline refund
+                requests that do not meet our refund criteria.
+            </p>
+
+
+            <h3>7. Deadlines</h3>
+
+            <p>
+                We aim to deliver all work by the agreed deadline. While we
+                make every reasonable effort to meet deadlines, delays may
+                occasionally occur due to unforeseen circumstances. Where
+                this happens, we will communicate with you promptly and
+                offer appropriate remedies.
+            </p>
+
+
+            <h3>8. Intellectual Property and Usage</h3>
+
+            <p>
+                Once an order is paid for in full, the customer is granted
+                the right to use the delivered material for personal
+                reference and study purposes, subject to Section 2 above.
+                Fox Assignment Pro retains no claim to submit or reuse the
+                delivered work for other customers.
+            </p>
+
+
+            <h3>9. Academic Integrity</h3>
+
+            <p>
+                Customers are solely responsible for how they use any
+                material we provide and for ensuring their use complies
+                with their institution's academic honesty and plagiarism
+                policies.
+            </p>
+
+            <p>
+                Fox Assignment Pro does not condone or encourage submitting
+                purchased work as one's own original submission where this
+                would breach academic integrity rules.
+            </p>
+
+
+            <h3>10. Confidentiality</h3>
+
+            <p>
+                We treat all customer information, order details, and
+                communications as confidential and do not share them with
+                unauthorised third parties, except as described in our
+                Privacy Policy.
+            </p>
+
+
+            <h3>11. Limitation of Liability</h3>
+
+            <p>
+                To the fullest extent permitted by law, Fox Assignment Pro
+                shall not be liable for any indirect, incidental, or
+                consequential damages arising from the use of our services,
+                including but not limited to academic outcomes, grades, or
+                institutional action resulting from misuse of delivered
+                materials.
+            </p>
+
+
+            <h3>12. Changes to These Terms</h3>
+
+            <p>
+                We may update these Terms from time to time. Continued use
+                of our website or services after changes are posted
+                constitutes acceptance of the revised Terms.
+            </p>
+
+
+            <h3>13. Governing Law</h3>
+
+            <p>
+                These Terms shall be governed by and construed in
+                accordance with the laws of <strong>England and Wales</strong>,
+                without regard to conflict of law principles.
+            </p>
+
+
+            <h3>14. Contact Us</h3>
+
+            <p>
+                For questions about these Terms &amp; Conditions, please
+                contact us:
+            </p>
+
+            <div class="policy-contact">
+
+                <h3>Fox Assignment Pro</h3>
+
+                <div class="contact-details">
+
+                    <p>
+                        <strong>Email:</strong>
+                        <a href="mailto:info.foxassignmentpro@gmail.com">
+                            info.foxassignmentpro@gmail.com
+                        </a>
+                    </p>
+
+                    <p>
+                        <strong>WhatsApp:</strong>
+                        +44 7916 691104
+                    </p>
+
+                </div>
+
+                <a
+                    href="https://wa.me/447916691104"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="whatsapp-btn"
+                >
+
+                    <svg
+                        class="whatsapp-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+                        <path
+                            fill="currentColor"
+                            d="M20.52 3.48A11.86 11.86 0 0 0 12.08 0C5.53 0 .2 5.33.2 11.88c0 2.09.55 4.13 1.6 5.93L.1 24l6.34-1.66a11.9 11.9 0 0 0 5.64 1.43h.01c6.55 0 11.88-5.33 11.88-11.89 0-3.17-1.23-6.15-3.45-8.4ZM12.09 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.76.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.51-5.27c0-5.46 4.44-9.9 9.9-9.9a9.83 9.83 0 0 1 7.01 2.91 9.87 9.87 0 0 1 2.9 7.03c0 5.46-4.44 9.9-9.9 9.9Zm5.43-7.41c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.68-1.64-.93-2.24-.24-.58-.49-.5-.68-.51h-.58c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.51s1.08 2.91 1.23 3.11c.15.2 2.12 3.24 5.13 4.54.72.31 1.28.49 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.41.25-.69.25-1.28.18-1.4-.08-.13-.28-.2-.58-.35Z"
+                        />
+                    </svg>
+
+                    Chat with us on WhatsApp
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             DISCLAIMER
+        ================================= -->
+
+        <section class="policy-section" id="disclaimer">
+
+            <div class="policy-label">03 — Disclaimer</div>
+
+            <h2>Academic Support Disclaimer</h2>
+
+            <p>
+                Fox Assignment Pro provides academic support, research
+                assistance and educational materials intended to support
+                learning and understanding.
+            </p>
+
+            <div class="policy-notice">
+
+                <p>
+                    <strong>Important:</strong> Materials supplied by
+                    Fox Assignment Pro should be used responsibly and in
+                    accordance with the academic integrity requirements of
+                    the customer's educational institution.
+                </p>
+
+            </div>
+
+            <p>
+                Customers remain responsible for checking their institution's
+                rules concerning academic assistance, authorship,
+                plagiarism, artificial intelligence, referencing and the
+                permitted use of external support.
+            </p>
+
+            <p>
+                Fox Assignment Pro does not guarantee any particular
+                academic grade, result, university outcome or assessment
+                decision.
+            </p>
+
+            <p>
+                We do not encourage customers to present purchased or
+                externally prepared material as their own original work
+                where doing so would breach academic integrity requirements.
+            </p>
+
+        </section>
+
+
+        <!-- ================================
+             COOKIE POLICY
+        ================================= -->
+
+        <section class="policy-section" id="cookies">
+
+            <div class="policy-label">04 — Cookies</div>
+
+            <h2>Cookie Policy</h2>
+
+            <p>
+                Cookies are small text files that can be stored on your
+                device when you visit a website.
+            </p>
+
+            <h3>Our Website</h3>
+
+            <p>
+                Fox Assignment Pro currently uses a primarily static website
+                and does not intentionally use advertising or analytics
+                cookies within the website pages covered by this policy.
+            </p>
+
+            <p>
+                Our website may contain links to third-party websites and
+                services. These third parties may use cookies or similar
+                technologies when you visit their platforms. Their own
+                policies will apply to those services.
+            </p>
+
+            <h3>Managing Cookies</h3>
+
+            <p>
+                Most modern web browsers allow you to control or delete
+                cookies through browser settings. Please note that changing
+                browser settings may affect how some websites function.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================================
+         CTA
+    ================================= -->
+
+    <section class="policy-cta">
+
+        <h2>Still Have a Question?</h2>
+
+        <p>
+            If you have any questions about our policies, terms or
+            services, our team is happy to help.
+        </p>
+
+        <a
+            href="https://wa.me/447916691104"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="whatsapp-btn"
+        >
+
+            <svg
+                class="whatsapp-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+            >
+                <path
+                    fill="currentColor"
+                    d="M20.52 3.48A11.86 11.86 0 0 0 12.08 0C5.53 0 .2 5.33.2 11.88c0 2.09.55 4.13 1.6 5.93L.1 24l6.34-1.66a11.9 11.9 0 0 0 5.64 1.43h.01c6.55 0 11.88-5.33 11.88-11.89 0-3.17-1.23-6.15-3.45-8.4ZM12.09 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.76.99 1-3.67-.23-.38a9.86 9.86 0 0 1-1.51-5.27c0-5.46 4.44-9.9 9.9-9.9a9.83 9.83 0 0 1 7.01 2.91 9.87 9.87 0 0 1 2.9 7.03c0 5.46-4.44 9.9-9.9 9.9Zm5.43-7.41c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.68-1.64-.93-2.24-.24-.58-.49-.5-.68-.51h-.58c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.51s1.08 2.91 1.23 3.11c.15.2 2.12 3.24 5.13 4.54.72.31 1.28.49 1.72.63.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.41.25-.69.25-1.28.18-1.4-.08-.13-.28-.2-.58-.35Z"
+                />
+            </svg>
+
+            Chat with us on WhatsApp
+
+        </a>
+
+    </section>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <img
+                    src="logo.png"
+                    alt="Fox Assignment Pro"
+                    class="footer-logo"
+                >
+
+                <p>
+                    Academic support, research guidance, editing and
+                    educational assistance designed around your needs.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="faq.html">FAQs</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>Policies</h4>
+
+                <a href="policies.html#privacy">
+                    Privacy Policy
+                </a>
+
+                <a href="policies.html#terms">
+                    Terms &amp; Conditions
+                </a>
+
+                <a href="policies.html#disclaimer">
+                    Disclaimer
+                </a>
+
+                <a href="policies.html#cookies">
+                    Cookie Policy
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>Contact</h4>
+
+                <a href="mailto:info.foxassignmentpro@gmail.com">
+                    info.foxassignmentpro@gmail.com
+                </a>
+
+                <a
+                    href="https://wa.me/447916691104"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    WhatsApp: +44 7916 691104
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 Fox Assignment Pro. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================================
+         JAVASCRIPT
+    ================================= -->
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
