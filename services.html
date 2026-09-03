@@ -2,232 +2,778 @@
 <html lang="en-GB">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
         content="Fox Assignment Pro provides academic support, dissertation guidance, proofreading, research guidance and coursework support.">
 
     <title>Our Services | Fox Assignment Pro</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="css/style.css">
+
 
     <style>
-        /* SERVICES PAGE */
+
+        /* =========================================
+           SERVICES PAGE
+        ========================================= */
+
+        /* HERO */
 
         .services-hero {
-            background: linear-gradient(135deg, #071a35, #102d52);
-            padding: 90px 20px;
-            color: white;
-            text-align: center;
-        }
+            background:
+                linear-gradient(
+                    135deg,
+                    #071a35 0%,
+                    #0b2344 55%,
+                    #102d52 100%
+                );
 
-        .services-hero .eyebrow {
-            color: #f58220;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
+            padding: 80px 20px;
 
-        .services-hero h1 {
-            font-size: clamp(38px, 6vw, 64px);
-            margin: 15px auto;
-            max-width: 850px;
-            line-height: 1.1;
-        }
+            color: #ffffff;
 
-        .services-hero p {
-            max-width: 700px;
-            margin: 20px auto 0;
-            font-size: 18px;
-            line-height: 1.7;
-            color: #e5eaf1;
-        }
-
-        .services-intro {
-            text-align: center;
-            max-width: 750px;
-            margin: 0 auto 50px;
-        }
-
-        .services-intro h2 {
-            font-size: 36px;
-            color: #071a35;
-            margin-bottom: 15px;
-        }
-
-        .services-intro p {
-            color: #64748b;
-            font-size: 17px;
-            line-height: 1.7;
-        }
-
-        .service-card-new {
-            background: #ffffff;
-            border-radius: 18px;
-            padding: 35px;
-            border: 1px solid #e5e7eb;
-            box-shadow: 0 10px 30px rgba(7, 26, 53, 0.08);
-            transition: all 0.3s ease;
-            height: 100%;
-            position: relative;
             overflow: hidden;
         }
 
-        .service-card-new::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: #f58220;
+
+        .services-hero-grid {
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            align-items: center;
+
+            gap: 55px;
+
         }
+
+
+        /* LEFT SIDE */
+
+        .services-hero-content {
+
+            max-width: 650px;
+
+        }
+
+
+        .services-hero .eyebrow {
+
+            display: inline-block;
+
+            color: #f58220;
+
+            font-size: 22px;
+
+            font-weight: 800;
+
+            text-transform: uppercase;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 18px;
+
+            position: relative;
+
+        }
+
+
+        .services-hero .eyebrow::after {
+
+            content: "";
+
+            display: block;
+
+            width: 65px;
+
+            height: 4px;
+
+            background: #f58220;
+
+            margin-top: 10px;
+
+            border-radius: 5px;
+
+        }
+
+
+        .services-hero h1 {
+
+            font-size:
+                clamp(42px, 5vw, 68px);
+
+            line-height: 1.08;
+
+            margin: 0;
+
+            color: #ffffff;
+
+            font-weight: 800;
+
+            letter-spacing: -1.5px;
+
+        }
+
+
+        .services-hero h1 span {
+
+            color: #f58220;
+
+        }
+
+
+        .services-hero p {
+
+            max-width: 650px;
+
+            margin-top: 25px;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            color: #e5eaf1;
+
+        }
+
+
+        /* HERO BUTTONS */
+
+        .hero-buttons {
+
+            display: flex;
+
+            gap: 15px;
+
+            margin-top: 32px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .hero-primary-button {
+
+            display: inline-block;
+
+            background: #f58220;
+
+            color: #ffffff;
+
+            padding: 15px 25px;
+
+            border-radius: 9px;
+
+            text-decoration: none;
+
+            font-weight: 800;
+
+            transition: 0.3s ease;
+
+        }
+
+
+        .hero-primary-button:hover {
+
+            background: #ffffff;
+
+            color: #071a35;
+
+            transform: translateY(-3px);
+
+        }
+
+
+        .hero-secondary-button {
+
+            display: inline-block;
+
+            border: 1px solid rgba(255,255,255,0.5);
+
+            color: #ffffff;
+
+            padding: 15px 25px;
+
+            border-radius: 9px;
+
+            text-decoration: none;
+
+            font-weight: 700;
+
+            transition: 0.3s ease;
+
+        }
+
+
+        .hero-secondary-button:hover {
+
+            background: #ffffff;
+
+            color: #071a35;
+
+        }
+
+
+        /* HERO IMAGE */
+
+        .services-hero-image {
+
+            position: relative;
+
+        }
+
+
+        .services-hero-image::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 180px;
+
+            height: 180px;
+
+            background: #f58220;
+
+            opacity: 0.15;
+
+            border-radius: 50%;
+
+            top: -35px;
+
+            right: -35px;
+
+        }
+
+
+        .services-hero-image img {
+
+            width: 100%;
+
+            max-width: 580px;
+
+            display: block;
+
+            margin-left: auto;
+
+            border-radius: 22px;
+
+            box-shadow:
+                0 25px 60px
+                rgba(0, 0, 0, 0.35);
+
+            position: relative;
+
+            z-index: 2;
+
+        }
+
+
+        /* =========================================
+           INTRO
+        ========================================= */
+
+        .services-intro {
+
+            text-align: center;
+
+            max-width: 760px;
+
+            margin:
+                0 auto 55px;
+
+        }
+
+
+        .services-intro h2 {
+
+            font-size:
+                clamp(30px, 4vw, 42px);
+
+            color: #071a35;
+
+            margin-bottom: 15px;
+
+            font-weight: 800;
+
+        }
+
+
+        .services-intro p {
+
+            color: #64748b;
+
+            font-size: 17px;
+
+            line-height: 1.7;
+
+        }
+
+
+        /* =========================================
+           SERVICE GRID
+        ========================================= */
+
+        .service-detail-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 28px;
+
+        }
+
+
+        .service-card-new {
+
+            background: #ffffff;
+
+            border-radius: 18px;
+
+            padding: 35px;
+
+            border:
+                1px solid #e5e7eb;
+
+            box-shadow:
+                0 10px 30px
+                rgba(7, 26, 53, 0.08);
+
+            transition:
+                all 0.3s ease;
+
+            height: 100%;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+
+        .service-card-new::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            height: 5px;
+
+            background: #f58220;
+
+        }
+
 
         .service-card-new:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 18px 40px rgba(7, 26, 53, 0.14);
+
+            transform:
+                translateY(-8px);
+
+            box-shadow:
+                0 20px 45px
+                rgba(7, 26, 53, 0.14);
+
         }
+
+
+        /* ICON */
 
         .service-icon-new {
-            width: 72px;
-            height: 72px;
+
+            width: 70px;
+
+            height: 70px;
+
             border-radius: 16px;
+
             background: #fff3e8;
+
             display: flex;
+
             align-items: center;
+
             justify-content: center;
-            font-size: 34px;
+
+            font-size: 32px;
+
             margin-bottom: 25px;
+
         }
+
 
         .service-card-new h3 {
+
             color: #071a35;
-            font-size: 24px;
+
+            font-size: 23px;
+
             margin-bottom: 14px;
+
+            font-weight: 800;
+
         }
+
 
         .service-card-new p {
+
             color: #64748b;
+
             line-height: 1.7;
+
             margin-bottom: 22px;
+
         }
+
+
+        /* SERVICE LIST */
 
         .service-list {
+
             list-style: none;
+
             padding: 0;
+
             margin: 0;
+
         }
+
 
         .service-list li {
-            padding: 8px 0;
+
+            padding:
+                7px 0;
+
             color: #334155;
+
+            line-height: 1.5;
+
         }
+
 
         .service-list li::before {
+
             content: "✓";
+
             color: #f58220;
+
             font-weight: 800;
+
             margin-right: 10px;
+
         }
+
+
+        /* LINK */
 
         .service-link {
+
             display: inline-block;
+
             margin-top: 22px;
+
             color: #071a35;
-            font-weight: 700;
+
+            font-weight: 800;
+
             text-decoration: none;
+
+            transition: 0.2s ease;
+
         }
+
 
         .service-link:hover {
+
             color: #f58220;
+
         }
+
+
+        /* =========================================
+           CTA
+        ========================================= */
 
         .support-banner {
-            background: #f58220;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f58220,
+                    #e96f0c
+                );
+
             border-radius: 22px;
+
             padding: 50px;
-            color: white;
+
+            color: #ffffff;
+
             display: flex;
+
             align-items: center;
+
             justify-content: space-between;
+
             gap: 30px;
+
         }
+
 
         .support-banner h2 {
-            margin: 0 0 10px;
+
+            margin:
+                0 0 10px;
+
             font-size: 32px;
+
         }
+
 
         .support-banner p {
+
             margin: 0;
-            color: white;
+
+            color: #ffffff;
+
             opacity: 0.95;
+
+            line-height: 1.6;
+
         }
+
 
         .whatsapp-button {
+
             display: inline-block;
-            background: white;
+
+            background: #ffffff;
+
             color: #071a35;
-            padding: 15px 25px;
+
+            padding:
+                15px 25px;
+
             border-radius: 10px;
+
             text-decoration: none;
+
             font-weight: 800;
+
             white-space: nowrap;
+
             transition: 0.3s ease;
+
         }
+
 
         .whatsapp-button:hover {
-            transform: translateY(-3px);
+
+            transform:
+                translateY(-3px);
+
+            box-shadow:
+                0 8px 20px
+                rgba(0,0,0,0.15);
+
         }
 
-        @media (max-width: 768px) {
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+
+        @media (max-width: 950px) {
+
+            .services-hero-grid {
+
+                grid-template-columns: 1fr;
+
+                text-align: center;
+
+            }
+
+
+            .services-hero-content {
+
+                max-width: 800px;
+
+                margin: 0 auto;
+
+            }
+
+
+            .services-hero .eyebrow::after {
+
+                margin-left: auto;
+
+                margin-right: auto;
+
+            }
+
+
+            .hero-buttons {
+
+                justify-content: center;
+
+            }
+
+
+            .services-hero-image img {
+
+                margin: 0 auto;
+
+            }
+
+
+            .service-detail-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
 
             .services-hero {
-                padding: 65px 20px;
+
+                padding:
+                    60px 20px;
+
             }
+
+
+            .services-hero h1 {
+
+                font-size: 42px;
+
+                letter-spacing: -0.5px;
+
+            }
+
+
+            .services-hero p {
+
+                font-size: 16px;
+
+            }
+
+
+            .services-hero .eyebrow {
+
+                font-size: 19px;
+
+                letter-spacing: 2px;
+
+            }
+
+
+            .service-detail-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
 
             .service-card-new {
+
                 padding: 28px;
+
             }
+
 
             .support-banner {
+
                 padding: 35px 25px;
+
                 flex-direction: column;
+
                 align-items: flex-start;
+
             }
 
+
             .whatsapp-button {
+
                 white-space: normal;
+
                 text-align: center;
+
             }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
-    <!-- HEADER -->
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
     <header class="site-header">
 
         <div class="container nav-wrap">
 
-            <a class="brand" href="index.html">
-                <img src="logo.png" alt="Fox Assignment Pro logo">
+
+            <a class="brand"
+                href="index.html">
+
+                <img
+                    src="logo.png"
+                    alt="Fox Assignment Pro logo">
+
             </a>
 
-            <button class="menu-toggle"
+
+            <button
+                class="menu-toggle"
                 aria-label="Open navigation"
                 aria-expanded="false">
+
                 ☰
+
             </button>
+
 
             <nav class="nav">
 
-                <a href="index.html">Home</a>
+                <a href="index.html">
+                    Home
+                </a>
 
-                <a class="active" href="services.html">
+                <a
+                    class="active"
+                    href="services.html">
+
                     Services
+
                 </a>
 
                 <a href="about.html">
@@ -238,83 +784,180 @@
                     FAQs
                 </a>
 
-                <a class="nav-cta" href="contact.html">
+                <a
+                    class="nav-cta"
+                    href="contact.html">
+
                     Get Support
+
                 </a>
 
             </nav>
+
 
         </div>
 
     </header>
 
 
-    <!-- HERO -->
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
     <main>
+
 
         <section class="services-hero">
 
-            <div class="container">
 
-                <span class="eyebrow">
-                    What We Offer
-                </span>
+            <div class="services-hero-grid">
 
-                <h1>
-                    Academic Support Built Around Your Needs
-                </h1>
 
-                <p>
-                    From assignments and coursework to dissertations,
-                    research and proofreading, Fox Assignment Pro provides
-                    structured academic support to help you move forward
-                    with confidence.
-                </p>
+                <!-- TEXT -->
+
+                <div class="services-hero-content">
+
+
+                    <span class="eyebrow">
+
+                        WHAT WE OFFER
+
+                    </span>
+
+
+                    <h1>
+
+                        Academic Support
+                        <span>Built Around Your Needs</span>
+
+                    </h1>
+
+
+                    <p>
+
+                        From assignments and coursework to
+                        dissertations, research and proofreading,
+                        Fox Assignment Pro provides structured
+                        academic support to help you move forward
+                        with confidence.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+
+                        <a
+                            class="hero-primary-button"
+                            href="contact.html">
+
+                            Get Academic Support
+
+                        </a>
+
+
+                        <a
+                            class="hero-secondary-button"
+                            href="#services">
+
+                            Explore Services
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- IMAGE -->
+
+                <div class="services-hero-image">
+
+                    <img
+                        src="services-hero.png"
+                        alt="Academic study workspace with books, laptop and graduation cap">
+
+                </div>
+
 
             </div>
+
 
         </section>
 
 
-        <!-- SERVICES -->
-        <section class="section section-light">
+
+        <!-- =====================================
+             SERVICES
+        ====================================== -->
+
+        <section
+            id="services"
+            class="section section-light">
+
 
             <div class="container">
 
+
                 <div class="services-intro">
 
+
                     <h2>
+
                         Explore Our Services
+
                     </h2>
 
+
                     <p>
-                        Choose the type of academic support that matches
-                        your current project, subject or research stage.
+
+                        Choose the type of academic support
+                        that matches your current project,
+                        subject or research stage.
+
                     </p>
 
+
                 </div>
+
 
 
                 <div class="service-detail-grid">
 
 
+
                     <!-- SERVICE 1 -->
+
                     <article class="service-card-new">
 
+
                         <div class="service-icon-new">
+
                             📝
+
                         </div>
 
+
                         <h3>
+
                             Assignment Support
+
                         </h3>
 
+
                         <p>
-                            Get practical guidance with understanding
-                            assessment requirements, planning your work,
-                            organising evidence and improving academic
-                            presentation.
+
+                            Get practical guidance with
+                            understanding assessment requirements,
+                            planning your work, organising evidence
+                            and improving academic presentation.
+
                         </p>
+
 
                         <ul class="service-list">
 
@@ -336,29 +979,47 @@
 
                         </ul>
 
-                        <a class="service-link" href="contact.html">
+
+                        <a
+                            class="service-link"
+                            href="contact.html">
+
                             Get Support →
+
                         </a>
+
 
                     </article>
 
 
+
                     <!-- SERVICE 2 -->
+
                     <article class="service-card-new">
 
+
                         <div class="service-icon-new">
+
                             📚
+
                         </div>
 
+
                         <h3>
+
                             Essay & Coursework
+
                         </h3>
 
+
                         <p>
-                            Improve your approach to essays, coursework
-                            and academic reports through structured
-                            guidance and feedback.
+
+                            Improve your approach to essays,
+                            coursework and academic reports through
+                            structured guidance and feedback.
+
                         </p>
+
 
                         <ul class="service-list">
 
@@ -380,29 +1041,47 @@
 
                         </ul>
 
-                        <a class="service-link" href="contact.html">
+
+                        <a
+                            class="service-link"
+                            href="contact.html">
+
                             Get Support →
+
                         </a>
+
 
                     </article>
 
 
+
                     <!-- SERVICE 3 -->
+
                     <article class="service-card-new">
 
+
                         <div class="service-icon-new">
+
                             🎓
+
                         </div>
 
+
                         <h3>
+
                             Dissertation Support
+
                         </h3>
 
+
                         <p>
-                            Structured guidance across the major stages
-                            of dissertation development and academic
-                            research.
+
+                            Structured guidance across the major
+                            stages of dissertation development
+                            and academic research.
+
                         </p>
+
 
                         <ul class="service-list">
 
@@ -424,29 +1103,47 @@
 
                         </ul>
 
-                        <a class="service-link" href="contact.html">
+
+                        <a
+                            class="service-link"
+                            href="contact.html">
+
                             Get Support →
+
                         </a>
+
 
                     </article>
 
 
+
                     <!-- SERVICE 4 -->
+
                     <article class="service-card-new">
 
+
                         <div class="service-icon-new">
+
                             ✏️
+
                         </div>
 
+
                         <h3>
+
                             Editing & Proofreading
+
                         </h3>
 
+
                         <p>
-                            Improve clarity, grammar, academic style
-                            and presentation while maintaining your own
-                            academic voice.
+
+                            Improve clarity, grammar, academic
+                            style and presentation while maintaining
+                            your own academic voice.
+
                         </p>
+
 
                         <ul class="service-list">
 
@@ -468,29 +1165,47 @@
 
                         </ul>
 
-                        <a class="service-link" href="contact.html">
+
+                        <a
+                            class="service-link"
+                            href="contact.html">
+
                             Get Support →
+
                         </a>
+
 
                     </article>
 
 
+
                     <!-- SERVICE 5 -->
+
                     <article class="service-card-new">
 
+
                         <div class="service-icon-new">
+
                             🔬
+
                         </div>
 
+
                         <h3>
+
                             Research Guidance
+
                         </h3>
 
+
                         <p>
+
                             Practical support for planning research,
                             finding relevant evidence and organising
                             academic sources.
+
                         </p>
+
 
                         <ul class="service-list">
 
@@ -512,29 +1227,47 @@
 
                         </ul>
 
-                        <a class="service-link" href="contact.html">
+
+                        <a
+                            class="service-link"
+                            href="contact.html">
+
                             Get Support →
+
                         </a>
+
 
                     </article>
 
 
+
                     <!-- SERVICE 6 -->
+
                     <article class="service-card-new">
 
+
                         <div class="service-icon-new">
+
                             📊
+
                         </div>
 
+
                         <h3>
+
                             Case Studies & Reports
+
                         </h3>
 
+
                         <p>
-                            Develop clearer case-study analysis and
-                            reports through structured frameworks,
+
+                            Develop clearer case-study analysis
+                            and reports through structured frameworks,
                             evidence and recommendations.
+
                         </p>
+
 
                         <ul class="service-list">
 
@@ -556,42 +1289,66 @@
 
                         </ul>
 
-                        <a class="service-link" href="contact.html">
+
+                        <a
+                            class="service-link"
+                            href="contact.html">
+
                             Get Support →
+
                         </a>
+
 
                     </article>
 
 
                 </div>
 
+
             </div>
 
         </section>
 
 
-        <!-- CTA -->
+
+        <!-- =====================================
+             CTA
+        ====================================== -->
+
         <section class="section">
+
 
             <div class="container">
 
+
                 <div class="support-banner">
+
 
                     <div>
 
+
                         <h2>
-                            Not sure which service you need?
+
+                            Not sure which service
+                            you need?
+
                         </h2>
 
+
                         <p>
-                            Tell us about your academic project and
-                            we'll help you identify the right type
-                            of support.
+
+                            Tell us about your academic project
+                            and we'll help you identify the right
+                            type of support.
+
                         </p>
+
 
                     </div>
 
-                    <a class="whatsapp-button"
+
+                    <a
+                        class="whatsapp-button"
                         href="https://wa.me/447916691104?text=Hello%20Fox%20Assignment%20Pro%2C%20I%20would%20like%20help%20choosing%20an%20academic%20support%20service."
                         target="_blank"
                         rel="noopener">
@@ -600,43 +1357,65 @@
 
                     </a>
 
+
                 </div>
+
 
             </div>
 
         </section>
 
+
     </main>
 
 
-    <!-- FOOTER -->
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
     <footer class="footer">
+
 
         <div class="container footer-grid">
 
+
             <div>
 
-                <img class="footer-logo"
+
+                <img
+                    class="footer-logo"
                     src="logo.png"
                     alt="Fox Assignment Pro">
 
+
                 <p>
-                    Academic support designed to help students
-                    understand, structure and present their work
-                    with confidence.
+
+                    Academic support designed to help
+                    students understand, structure and
+                    present their work with confidence.
+
                 </p>
+
 
             </div>
 
 
+
             <div>
+
 
                 <h3>
                     Quick Links
                 </h3>
 
+
                 <a href="index.html">
                     Home
+                </a>
+
+                <a href="services.html">
+                    Services
                 </a>
 
                 <a href="about.html">
@@ -651,62 +1430,96 @@
                     Contact
                 </a>
 
+
             </div>
 
 
+
             <div>
+
 
                 <h3>
                     Connect
                 </h3>
 
-                <a href="https://wa.me/447916691104"
+
+                <a
+                    href="https://wa.me/447916691104"
                     target="_blank"
                     rel="noopener">
+
                     WhatsApp
+
                 </a>
 
-                <a href="https://www.instagram.com/foxassignmentpro1/"
+
+                <a
+                    href="https://www.instagram.com/foxassignmentpro1/"
                     target="_blank"
                     rel="noopener">
+
                     Instagram
+
                 </a>
 
-                <a href="https://www.facebook.com/profile.php?id=61591156565168&sk=about"
+
+                <a
+                    href="https://www.facebook.com/profile.php?id=61591156565168&sk=about"
                     target="_blank"
                     rel="noopener">
+
                     Facebook
+
                 </a>
 
-                <a href="https://www.threads.com/@foxassignmentpro1"
+
+                <a
+                    href="https://www.threads.com/@foxassignmentpro1"
                     target="_blank"
                     rel="noopener">
+
                     Threads
+
                 </a>
+
 
             </div>
 
+
         </div>
+
 
 
         <div class="container footer-bottom">
 
-            <span>
-                © <span id="year"></span>
-                Fox Assignment Pro.
-            </span>
 
             <span>
-                Academic support should complement your own learning
-                and university requirements.
+
+                ©
+                <span id="year"></span>
+                Fox Assignment Pro.
+
             </span>
+
+
+            <span>
+
+                Academic support should complement
+                your own learning and university
+                requirements.
+
+            </span>
+
 
         </div>
+
 
     </footer>
 
 
+
     <script src="js/script.js"></script>
+
 
 </body>
 
