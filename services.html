@@ -809,6 +809,197 @@
 
         }
 
+
+/* =====================================================
+           HEADER + FOOTER ENHANCEMENTS
+           Added for larger branding, clearer navigation,
+           WhatsApp shortcut and icon-based footer socials.
+        ===================================================== */
+
+        .site-header .nav-wrap {
+            height: 94px;
+            gap: 24px;
+        }
+
+        .brand-lockup {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            flex-shrink: 0;
+        }
+
+        .brand-lockup .brand-logo {
+            display: block;
+            width: 235px;
+            height: auto;
+            max-height: 74px;
+            object-fit: contain;
+        }
+
+        .brand-name {
+            color: #0a2b55;
+            font-size: 19px;
+            line-height: 1.05;
+            font-weight: 900;
+            letter-spacing: -0.35px;
+            white-space: nowrap;
+        }
+
+        .brand-name strong {
+            color: #f58220;
+            font-weight: 900;
+        }
+
+        .site-header .nav {
+            gap: 21px;
+        }
+
+        .site-header .nav > a:not(.nav-cta):not(.nav-whatsapp) {
+            font-size: 17px;
+            font-weight: 800;
+        }
+
+        .nav-whatsapp {
+            width: 46px;
+            height: 46px;
+            min-width: 46px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #25d366;
+            color: #ffffff !important;
+            box-shadow: 0 7px 18px rgba(37, 211, 102, 0.23);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+        }
+
+        .nav-whatsapp::after {
+            display: none !important;
+        }
+
+        .nav-whatsapp svg {
+            width: 23px;
+            height: 23px;
+            display: block;
+        }
+
+        .nav-whatsapp:hover {
+            background: #1fbe5d;
+            color: #ffffff !important;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(37, 211, 102, 0.32);
+        }
+
+        .footer-logo {
+            width: 275px;
+            max-height: 100px;
+            object-fit: contain;
+            object-position: left center;
+            margin-bottom: 18px;
+        }
+
+        .footer-socials {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 13px;
+        }
+
+        .footer .footer-social-link {
+            width: 44px;
+            height: 44px;
+            margin: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+        }
+
+        .footer .footer-social-link svg {
+            width: 20px;
+            height: 20px;
+            display: block;
+        }
+
+        .footer .footer-social-link:hover {
+            color: #ffffff;
+            background: #f58220;
+            border-color: #f58220;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 1100px) {
+            .brand-lockup .brand-logo {
+                width: 205px;
+            }
+
+            .brand-name {
+                font-size: 16px;
+            }
+
+            .site-header .nav {
+                gap: 16px;
+            }
+
+            .site-header .nav > a:not(.nav-cta):not(.nav-whatsapp) {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .site-header .nav-wrap {
+                height: 86px;
+            }
+
+            .brand-lockup .brand-logo {
+                width: 195px;
+                max-height: 66px;
+            }
+
+            .brand-name {
+                font-size: 16px;
+            }
+
+            .site-header .nav {
+                top: 86px;
+            }
+
+            .nav-whatsapp {
+                width: 46px;
+                height: 46px;
+                align-self: flex-start;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .site-header .nav-wrap {
+                height: 82px;
+            }
+
+            .brand-lockup .brand-logo {
+                width: 195px;
+                max-height: 62px;
+            }
+
+            .brand-name {
+                display: none;
+            }
+
+            .site-header .nav {
+                top: 82px;
+            }
+
+            .footer-logo {
+                width: 255px;
+                max-height: 92px;
+            }
+        }
+
     </style>
 
 </head>
@@ -849,7 +1040,7 @@
             </button>
 
             <nav class="nav" aria-label="Primary navigation">
-            
+
                 <a href="index.html">Home</a>
                 <a class="active" href="services.html">Services</a>
                 <a href="about.html">About</a>
